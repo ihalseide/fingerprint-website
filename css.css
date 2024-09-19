@@ -1,0 +1,79 @@
+body {
+	/*background-color:#1e4d2b;*/
+	background-image:url("/images/background.png");
+	color:#000000;
+	line-height:1.5;
+	font-family:serif;
+	font-size:100%;
+}
+body>* {
+	background-color:#f7f7f7;
+	color:#000000;
+	font:inherit;
+	margin:1% auto;
+	padding:3%;
+	max-width:75%;
+	border:2px solid #f0f0f0;
+	border-radius:3px;
+	box-shadow:2px 4px 4px #0e0e0e;
+}
+div.thinner { padding-top:2em; padding-bottom:2em; margin:5em auto; }
+blockquote {
+	padding:0;
+	margin:0 0 0 3ch;
+}
+h1,h2,h3,h4,h5 { font-family:sans-serif; }
+h1 { font-weight:590; font-size:150%; text-align:center; }
+h2 { font-weight:530; font-size:140%; }
+h3 { font-weight:480; font-size:130%; }
+h4 { font-weight:430; font-size:120%; }
+h5 { font-weight:370; font-size:110%; }
+pre.boxed {
+	border: 1px solid #404040;
+	padding: 0.5em;
+}
+article p {
+	max-width:80ch;
+}
+li { margin:0.5em; }
+/* make link lists look a bit like buttons */
+li>a {
+	padding:0.15em 0.8em 0.15em 0.8em;
+	border:2px solid green;
+	border-radius:3px;
+	color:#1e4d2b;
+	background-color:#f5fff5;
+	/*text-decoration:none;*/
+}
+/* make main title link have a distinct style */
+.main-title a {
+	font-size:110%;
+	padding:0.4em 1em 0.4em 1em;
+	border:3px solid green;
+	border-radius:5px;
+	text-decoration:none;
+	color:#1e4d2b;
+	background-color:#f5fff5;
+}
+img.teamphoto {
+	height:15em;
+	border:3px solid #000000;
+	border-radius:5px;
+	margin:10px;
+	padding:3px;
+}
+nav li {
+	text-align:center;
+	display:inline;
+}
+nav ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+.nav-header {
+	padding-top:0.20em;
+	padding-bottom:1em;
+	margin-top:0;
+}

@@ -4,238 +4,60 @@
 <meta charset="utf-8">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" type="text/css" href="/css.css">
 <title>SRAM Fingerprint</title>
-<style>
-  body {
-        /*background-color:#1e4d2b;*/
-        background-image:url("images/background.png");
-        color:#000000;
-        line-height:1.5;
-        font-family:serif;
-        font-size:100%;
-  }
-  body>* {
-        background-color:#f7f7f7;
-        color:#000000;
-        font:inherit;
-        margin:1% auto;
-        padding:2%;
-        max-width:min(100%, 70ch);
-        border:2px solid #f0f0f0;
-        border-radius:3px;
-        box-shadow:2px 4px 4px #0e0e0e;
-  }
-  div.thinner { padding-top:5px; padding-bottom:5px; margin:0px auto; }
-  blockquote {
-        padding:0;
-        margin:0 0 0 3ch;
-  }
-  h1,h2,h3,h4,h5 { font-family:sans-serif; }
-  h1 { font-weight:590; font-size:150%; text-align:center; }
-  h2 { font-weight:530; font-size:140%; }
-  h3 { font-weight:480; font-size:130%; }
-  h4 { font-weight:430; font-size:120%; }
-  h5 { font-weight:370; font-size:110%; }
-  pre.boxed {
-        border: 1px solid #404040;
-        padding: 0.5em;
-  }
-  /* Show one article at a time */
-  body .hider { display: none; }
-  body .hider:target { display: block; }
-  li { margin:0.5em; }
-  /* make link lists look a bit like buttons */
-  li>a {
-    padding:0.15em 0.8em 0.15em 0.8em;
-    border:2px solid green;
-    border-radius:3px;
-    color:#1e4d2b;
-    background-color:#f5fff5;
-    /*text-decoration:none;*/
-  }
-  /* make main title link have a distinct style */
-  .main-title a {
-    font-size:110%;
-    padding:0.4em 1em 0.4em 1em;
-    border:3px solid green;
-    border-radius:5px;
-    text-decoration:none;
-    color:#1e4d2b;
-    background-color:#f5fff5;
-  }
-  img.teamphoto {
-    height:15em;
-    border:3px solid #000000;
-    border-radius:5px;
-    margin:10px;
-    padding:3px;
-  }
-</style>
 </head>
 <body>
 
-  <div id="main">
+  <div class="nav-header">
   
-    <h1 class="main-title"><a href="#"><img style="height:2em; vertical-align:middle;" src="images/sram-icon.png"> SRAM Fingerprint <img style="height:2em; vertical-align:middle;" src="images/sram-icon.png"></a></h1>
+    <h1 class="main-title"><a href="/"><img style="height:2em; vertical-align:middle;" src="/images/sram-icon.png">&nbsp;SRAM&nbsp;Fingerprint&nbsp;<img style="height:2em; vertical-align:middle;" src="/images/sram-icon.png"></a></h1>
+    
+    <nav><ul>
+      <li><a href="/">Front</a></li>
+      <li><a href="/timeline">Timeline</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/docs">Documents</a></li>
+      <li><a href="/demos">Demos</a></li>
+      <!-- <li><a href="acknowledgements">Acknowledgements</a></li> -->
+    </ul></nav>
+    
+  </div>
 
-    <h2>Project summary</h2>
+  <article>
+  
+    <h1>Main project information</h1>
+
+    <h2>Summary</h2>
     
     <p>
-      When a Static Random-Access Memory (SRAM) chip is powered up it has a unique fingerprint. Each bit contained in every memory address will flip to either zero or one. These values can be used to identify the chip. This project will focus on finding ways to measure and change this fingerprint, using such values to identify chips, and investigating if the chips manufacturer can be identified (what we call the <q>DNA</q> of the chip).
+      When a Static Random-Access Memory (SRAM) chip is powered up it has a unique fingerprint (the power-up state data). Each bit contained in every memory address will flip to either zero or one. These values can be used to identify the chip. This project will focus on finding ways to measure and change this fingerprint, using such values to identify chips, and investigating if the chips manufacturer can be identified (what we call the <q>DNA</q> of the chip).
     </p>
 
     <h2>Project background</h2>
     
     <p>
-      SRAM and the SRAM fingerprint has many applications. Current computers use whats called a pseudo random number generator(PRNGs). These PRNGs are vulnerable to hacks, for many purposes the randomness is “good enough”. But when used for security can become a single point of failure. The SRAM fingerprint could potentially be used to produce true random numbers. Another application is identification. If a country or individual could get access to a laptop containing sensitive information that is encrypted, they could potentially swap out components to try and can access. If these parts could be identified by a physical unclonable function it could be a way to mitigate this. The last application relevant to our project is DNA. It could potentially be possible to identify the manufacturing process and manufacturer based off of these values. 
-
-		  PRNG source - https://www.unitychain.io/blog/a-brief-history-of-random-insecurity/
-
+      SRAM and the SRAM fingerprint has many applications. Current computers use whats called a pseudo random number generator (PRNGs)[1]. These PRNGs are vulnerable to hacks, for many purposes the randomness is “good enough”. But when used for security can become a single point of failure. The SRAM fingerprint could potentially be used to produce true random numbers. Another application is identification. If a country or individual could get access to a laptop containing sensitive information that is encrypted, they could potentially swap out components to try and gain access. If these parts could be identified by a physical unclonable function it could be a way to mitigate this. The last application relevant to our project is DNA. It could potentially be possible to identify the manufacturing process and manufacturer based off of these values. 
     </p>
-
+    
+    
     <h2>Constraints and goal</h2>
     
     <p>
       ...
     </p>
     
-    <h2>Further project information</h2>
-    
-    <nav><ul>
-      <li><a href="#timeline">Timeline</a> (and the deliverables and current status of the project)</li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#docs">Documents</a> (and documentation)</li>
-      <li><a href="#demos">Demos</a></li>
-      <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
-    </ul></nav>
-  
-  </div>
-  
-  <article id="timeline" class="hider">
-  
-    <h1>Timeline</h1>
-    
     <p>
-      Below is our current, actual, and planned timeline for this project.
-    </p>
-    
-    <h2>Current status</h2>
-    
-    <p>
-      This is the current status of the SRAM fingerprint project. Below is a list of updates from newest to oldest.
-    </p><ul>
-      <li><span style="color:green;">2024.09.18</span>: exploring strong 1's and 0's, maximum data retention time, and metrics for measuring a fingerprint.</li>
-    </ul>
-    
-    <h2>Timeline of monthly milestones</h2>
-
-    <p><b>August</b>: have this milestone document initially planned.
-    
-    <p><b>September</b>: Austin caught-up with previous data collection & analysis, and having a way to demonstrate different chips are different.  
-    <ol>
-    <li>Run experiment: when is the max time for bits to stop flipping, and how consistent is that (the distribution) for a given chip. Such as the 0/1 bias percentage for individual bits. 
-    <li>Come up with a process to identify chips with the Arduino, which is demonstratable/testable 
-    </ol>
-
-    <p><b>October</b>: Have results for how the following can affect the fingerprints. And to see that if that affects the accuracy of our process for identifying chips. 
-    <ol>
-    <li>Adding a capacitor/inductor on the Vin line, and different voltage levels 
-    <li>Chip temperature 
-    </ol>
-
-    <p><b>November</b>: Have a usable metric that works as chip DNA, and a majority of progress in the presentation. 
-
-    <p><b>December</b>: Have a great presentation 
-
-    <h2>Deliverables</h2>
-    
-    <p>
-      ??? a process for distinguishing SRAMs (Fingerprint) and SRAM families (DNA) ???
-    </p>
-      
-  
-  </article>
-  
-  <article id="team" class="hider">
-  
-    <h1>Team</h1>
-    
-    <h2>Dr. Biswajit Ray</h2>
-    
-    <div>
-      <a href="https://www.engr.colostate.edu/ece/people/biswajit-ray/">
-        <img class="teamphoto" src="images/Biswajit-Ray.jpg" alt="Profile picture of Biswajit Ray">
-      </a>
-      <br><span>
-        Faculty Advisor
-      </span>
-    </div>
-    
-    <p>
-      Dr. Ray's home page is <a href="https://www.engr.colostate.edu/ece/people/biswajit-ray/">here</a>.
-    </p>
-    
-    <h2>Austin Feighert</h2>
-    
-    <div>
-      <img class="teamphoto" src="images/Austin-Feighert-placeholder.jpg" alt="Profile picture of Austin Feighert">
-      <br><span><span>
-        Computer Engineering
-      </span>
-    </div>
-    
-    <h2>Izak Halseide</h2>
-    
-    <div>
-      <img class="teamphoto" src="images/Izak-Halseide.jpg" alt="Profile picture of Izak Halseide">
-      <br><span>
-        Computer Engineering
-      </span>
-    </div>
-  
-  </article>
-  
-  <article id="docs" class="hider">
-  
-    <h1>Documents</h1>
-    
-    <p>
-      ...
+      [1] PRNG source - <a href="https://www.unitychain.io/blog/a-brief-history-of-random-insecurity/">https://www.unitychain.io/blog/a-brief-history-of-random-insecurity/</a>
     </p>
   
   </article>
   
-  <article id="demos" class="hider">
+  <div class='thinner'>
   
-    <h1>Demos</h1>
-    
-    <p>
-      There are no pictures and demos here yet.
-    </p>
+    <p style='text-align:center'><a href="#"><img style="vertical-align:middle;" height="24px" src="favicon.png"> To top of page &uarr;</a></p>
   
-  </article>
-  
-  <article id="acknowledgements" class="hider">
-  
-    <h1>Acknowledgements</h1>
-    
-    <p>
-      We have no acknowledgements to write at this time.
-    </p>
-  
-  </article>
-  
-  <div id="program">
-  
-    <h1>Program</h1>
-    
-    <p>
-      This is just one project out of the many other Electrical and Computer Engineering
-      senior design projects at Colorado State University.
-      Use the following links to learn more and to support us:
-    </p>
-    
-    <ul><li>
+    <nav><ul><li>
       <a href="http://www.engr.colostate.edu/ECE401/AY24_senior_design_projects.php">Other ECE senior design projects</a>
     </li><li>
       <a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE">Support our program</a>
@@ -243,15 +65,9 @@
       <a href="https://www.engr.colostate.edu/ece/">ECE department home page</a>
     </li><li>
       <a href="http://www.colostate.edu/">CSU home page</a>
-    </li></ul>
-    
-  </div>
+    </li></ul></nav>
   
-  <div class='thinner'>
-  
-    <p style='text-align:center'><a href="#"><img style="vertical-align:middle;" height="24px" src="favicon.png"> To top of page &uarr;</a></p>
-    
-    <!-- <p style='text-align:center'>Copyright 2024 Austin Feighert, and Izak Halseide.</p> -->
+    <p style='text-align:center'>Copyright 2024 Austin Feighert and Izak Halseide</p>
     
   </div>
   
