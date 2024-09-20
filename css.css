@@ -37,12 +37,13 @@ article p {
 }
 li { margin:0.5em; }
 /* make link lists look a bit like buttons */
-li>a {
+em>a {
 	padding:0.15em 0.8em 0.15em 0.8em;
 	border:2px solid green;
 	border-radius:3px;
 	color:#1e4d2b;
 	background-color:#f5fff5;
+	font-style:normal;
 	/*text-decoration:none;*/
 }
 /* make main title link have a distinct style */
@@ -56,7 +57,7 @@ li>a {
 	background-color:#f5fff5;
 }
 img.teamphoto {
-	height:15em;
+	height:10em;
 	border:3px solid #000000;
 	border-radius:5px;
 	margin:10px;

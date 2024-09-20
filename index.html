@@ -14,11 +14,11 @@
     <h1 class="main-title"><a href="/"><img style="height:2em; vertical-align:middle;" src="/images/sram-icon.png">&nbsp;SRAM&nbsp;Fingerprint&nbsp;<img style="height:2em; vertical-align:middle;" src="/images/sram-icon.png"></a></h1>
     
     <nav><ul>
-      <li><a href="/">Front</a></li>
-      <li><a href="/timeline">Timeline</a></li>
-      <li><a href="/team">Team</a></li>
-      <li><a href="/docs">Documents</a></li>
-      <li><a href="/demos">Demos</a></li>
+      <li><em><a href="/">Front</a></em></li>
+      <li><em><a href="/timeline">Timeline</a></em></li>
+      <li><em><a href="/team">Team</a></em></li>
+      <li><em><a href="/docs">Documents</a></em></li>
+      <li><em><a href="/demos">Demos</a></em></li>
       <!-- <li><a href="acknowledgements">Acknowledgements</a></li> -->
     </ul></nav>
     
@@ -33,41 +33,47 @@
     <p>
       When a Static Random-Access Memory (SRAM) chip is powered up it has a unique fingerprint (the power-up state data). Each bit contained in every memory address will flip to either zero or one. These values can be used to identify the chip. This project will focus on finding ways to measure and change this fingerprint, using such values to identify chips, and investigating if the chips manufacturer can be identified (what we call the <q>DNA</q> of the chip).
     </p>
+    
+    <p>
+      <b>Group meeting time</b>: Wednesdays from 10:00am-12:00pm, and from 2:00pm-4:00pm.
+    </p>
 
     <h2>Project background</h2>
     
     <p>
-      SRAM and the SRAM fingerprint has many applications. Current computers use whats called a pseudo random number generator (PRNGs)[1]. These PRNGs are vulnerable to hacks, for many purposes the randomness is “good enough”. But when used for security can become a single point of failure. The SRAM fingerprint could potentially be used to produce true random numbers. Another application is identification. If a country or individual could get access to a laptop containing sensitive information that is encrypted, they could potentially swap out components to try and gain access. If these parts could be identified by a physical unclonable function it could be a way to mitigate this. The last application relevant to our project is DNA. It could potentially be possible to identify the manufacturing process and manufacturer based off of these values. 
+      SRAM and the SRAM fingerprint has many applications. Current computers use whats called a pseudo random number generator (PRNGs)[<a id="fn-1-back" href="#fn-1">1</a>]. These PRNGs are vulnerable to hacks, for many purposes the randomness is “good enough”. But when used for security can become a single point of failure. The SRAM fingerprint could potentially be used to produce true random numbers. Another application is identification. If a country or individual could get access to a laptop containing sensitive information that is encrypted, they could potentially swap out components to try and gain access. If these parts could be identified by a physical unclonable function it could be a way to mitigate this. The last application relevant to our project is DNA. It could potentially be possible to identify the manufacturing process and manufacturer based off of these values. 
     </p>
     
     
-    <h2>Constraints and goal</h2>
+    <h2>Goals</h2>
     
     <p>
-      ...
+      Our goal is to further the state of research for use and understanding of SRAM memory and its implications for security and reliability in applcations.
+      The main anticipated deliverable for our project is a process for distinguishing SRAMs (Fingerprint) and SRAM families (DNA).
     </p>
     
-    <p>
-      [1] PRNG source - <a href="https://www.unitychain.io/blog/a-brief-history-of-random-insecurity/">https://www.unitychain.io/blog/a-brief-history-of-random-insecurity/</a>
-    </p>
+    <ol><li>
+      <a id="fn-1" href="#fn-1-back">&uarr;</a>
+      PRNG source - <a href="https://www.unitychain.io/blog/a-brief-history-of-random-insecurity/">www.unitychain.io/blog/a-brief-history-of-random-insecurity/</a>
+    </li></ol>
   
   </article>
   
   <div class='thinner'>
   
-    <p style='text-align:center'><a href="#"><img style="vertical-align:middle;" height="24px" src="favicon.png"> To top of page &uarr;</a></p>
+    <p style='text-align:center'><a href="#"><img style="vertical-align:middle;" height="24px" src="/favicon.png"> To top of page &uarr;</a></p>
   
-    <nav><ul><li>
+    <nav><ul><li><em>
       <a href="http://www.engr.colostate.edu/ECE401/AY24_senior_design_projects.php">Other ECE senior design projects</a>
-    </li><li>
+    </em></li><li><em>
       <a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE">Support our program</a>
-    </li><li>
+    </em></li><li><em>
       <a href="https://www.engr.colostate.edu/ece/">ECE department home page</a>
-    </li><li>
+    </em></li><li><em>
       <a href="http://www.colostate.edu/">CSU home page</a>
-    </li></ul></nav>
+    </em></li></ul></nav>
   
-    <p style='text-align:center'>Copyright 2024 Austin Feighert and Izak Halseide</p>
+    <p style='text-align:center'>Copyright 2024 Austin Feighert, Izak Halseide</p>
     
   </div>
   
