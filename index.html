@@ -19,7 +19,7 @@
       <li><em><a href="/ece-sr-design/AY24/fingerprint/team">Team</a></em></li>
       <!-- <li><em><a href="/ece-sr-design/AY24/fingerprint/docs">Documents</a></em></li> -->
       <!-- <li><em><a href="/ece-sr-design/AY24/fingerprint/demos">Demos</a></em></li> -->
-      <!-- <li><a href="/ece-sr-design/AY24/fingerprint/acknowledgements">Acknowledgements</a></li> -->
+      <!-- <li><a href="/ece-sr-design/AY24/fingerprint/acknowledgments">Acknowledgments</a></li> -->
     </ul></nav>
     
   </div>
@@ -44,11 +44,22 @@
       SRAM and the SRAM fingerprint has many applications. Current computers use whats called a pseudo random number generator (PRNGs)[<a id="fn-1-back" href="#fn-1">1</a>]. These PRNGs are vulnerable to hacks, for many purposes the randomness is “good enough”. But when used for security can become a single point of failure. The SRAM fingerprint could potentially be used to produce true random numbers. Another application is identification. If a country or individual could get access to a laptop containing sensitive information that is encrypted, they could potentially swap out components to try and gain access. If these parts could be identified by a physical unclonable function it could be a way to mitigate this. The last application relevant to our project is DNA. It could potentially be possible to identify the manufacturing process and manufacturer based off of these values. 
     </p>
     
+    <img src="/ece-sr-design/AY24/fingerprint/images/CY-65nm-1-binary-votes-out-of-49.png">
+    <p>Distribution of bit preferences for power-up values</p>
+   
+    <img src="/ece-sr-design/AY24/fingerprint/images/CY-65nm-3-salt-and-pepper-64x64.png">
+    <p>Salt-and-pepper binary image snapshot of a 65nm power-up state</p>
+    
+    <img src="/ece-sr-design/AY24/fingerprint/images/CY-250nm-2-salt-and-pepper-64x64.png">
+    <p>Salt-and-pepper binary image snapshot of a 250nm power-up state</p>
+    
+    <img src="/ece-sr-design/AY24/fingerprint/images/CY-90nm-1-heat_map.png">
+    <p>Distribution of bit preferences for power-up values</p>    
     
     <h2>Goals</h2>
     
     <p>
-      Our goal is to further the state of research for use and understanding of SRAM memory and its implications for security and reliability in applcations.
+      Our goal is to further the state of research for use and understanding of SRAM memory and its implications for security and reliability in applications.
       The main anticipated deliverable for our project is a process for distinguishing SRAMs (Fingerprint) and SRAM families (DNA).
     </p>
     
